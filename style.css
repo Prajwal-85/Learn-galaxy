@@ -1,0 +1,254 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: #fff;
+    }
+
+    /* Navbar */
+    .nav {
+      width: 100%;
+      height: 60px;
+      background: linear-gradient(90deg, #121212, #181818);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .nav b {
+      font-size: 26px;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    /* Hero Section */
+    .logo {
+      height: 400px;
+      width: 100%;
+      background: radial-gradient(circle at top, #1a1a40, #000);
+      padding-top: 100px;
+      text-align: center;
+    }
+
+    .logo h1 {
+      font-size: 60px;
+      background: linear-gradient(90deg, #ff0066, #ff6600);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    .logo p {
+      font-size: 18px;
+      color: #ccc;
+      letter-spacing: 1px;
+    }
+
+    /* Book Section */
+    .readsec {
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    .readsec h2 {
+      color: #ff6600;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .books {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      padding: 20px;
+      scroll-behavior: smooth;
+    }
+
+    .books img {
+      width: 180px;
+      height: 250px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .books img:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    /* Skills Section */
+    .skillsec {
+      padding: 40px 20px;
+      background: #111;
+      text-align: center;
+    }
+
+    .skillsec h2 {
+      font-size: 28px;
+      color: #00b3ff;
+      margin-bottom: 20px;
+    }
+
+    .skill-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      padding: 0 20px;
+    }
+
+    .skill {
+      background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+      padding: 15px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      background: linear-gradient(135deg, #111, #333);
+      transform: scale(1.05);
+    }
+
+    /* Subject Section */
+    .subject-sec {
+      padding: 40px 20px;
+      background: #0d0d0d;
+      text-align: center;
+    }
+
+    .subject-sec h2 {
+      color: #ff6600;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .subjects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .subject {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .subject:hover {
+      background: linear-gradient(90deg, #ff0066, #ff6600);
+      color: #fff;
+    }
+
+    /* People's Stories Section */
+    .stories {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .stories h2 {
+      color: #00b3ff;
+      margin-bottom: 15px;
+    }
+
+    .stories a {
+      display: inline-block;
+      background: #222;
+      color: #00b3ff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .stories a:hover {
+      background: #00b3ff;
+      color: #fff;
+    }
+
+    /* Share Story Section */
+    .share {
+      padding: 40px 20px;
+      text-align: center;
+      background: #111;
+    }
+
+    .share h2 {
+      color: #ff6600;
+      margin-bottom: 15px;
+    }
+
+    .share p {
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .share a {
+      background: linear-gradient(90deg, #5865F2, #4e54c8);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .share a:hover {
+      background: #4e54c8;
+    }
+
+    /* Edu News Section */
+    .edunews {
+      padding: 40px 20px;
+      background: #0b0b0b;
+      text-align: center;
+    }
+
+    .edunews h2 {
+      color: #00b3ff;
+      margin-bottom: 20px;
+    }
+
+    .edunews p {
+      color: #aaa;
+      max-width: 700px;
+      margin: 0 auto 15px;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+      background: #050505;
+      color: #aaa;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 14px;
+      border-top: 1px solid #222;
+    }
+
+    footer a {
+      color: #00b3ff;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
