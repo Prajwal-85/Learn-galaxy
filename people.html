@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People of Learn Galaxy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top left, #0a043c, #2b1055, #000);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      text-align: center;
+      color: #74b9ff;
+      text-shadow: 0 0 20px #0984e3;
+      margin-bottom: 40px;
+    }
+
+    .people-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .person {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(9, 132, 227, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .person:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 30px #74b9ff, 0 0 50px #0984e3 inset;
+    }
+
+    .person h3 {
+      color: #81ecec;
+      margin-bottom: 8px;
+      font-size: 1.4em;
+    }
+
+    .person h4 {
+      color: #f6e58d;
+      margin-bottom: 10px;
+      font-weight: normal;
+      font-size: 1.1em;
+    }
+
+    .person p {
+      color: #dfe6e9;
+      font-size: 0.95em;
+      line-height: 1.5;
+    }
+
+    .button {
+      margin-top: 50px;
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      border: 2px solid #74b9ff;
+      color: #74b9ff;
+      font-size: 1.2em;
+      transition: 0.3s;
+      box-shadow: 0 0 15px #0984e3, 0 0 40px #0984e3 inset;
+    }
+
+    .button:hover {
+      background: #74b9ff;
+      color: #0a043c;
+      box-shadow: 0 0 25px #74b9ff, 0 0 50px #0984e3;
+    }
+  </style>
+</head>
+<body>
+  <h1>People of Learn Galaxy</h1>
+
+  <div class="people-grid">
+    <div class="person">
+      <h3>Orion</h3>
+      <h4>Keeper of Stories</h4>
+      <p>Guardian of all tales written among the stars, who preserves wisdom from forgotten worlds.</p>
+    </div>
+
+    <div class="person">
+      <h3>Lyra</h3>
+      <h4>The Dream Weaver</h4>
+      <p>She shapes imagination into constellations, helping dreamers find their path through the void.</p>
+    </div>
+
+    <div class="person">
+      <h3>Astra</h3>
+      <h4>Guardian of Knowledge</h4>
+      <p>She lights the way for seekers, carrying the eternal flame of understanding through time.</p>
+    </div>
+
+    <div class="person">
+      <h3>Nova</h3>
+      <h4>The Philosopher Star</h4>
+      <p>He questions everything, his glow flickering with the rhythm of thought and truth.</p>
+    </div>
+
+    <div class="person">
+      <h3>Zenith</h3>
+      <h4>The Silent Observer</h4>
+      <p>He watches galaxies rise and fall, learning from every spark and every silence.</p>
+    </div>
+
+    <div class="person">
+      <h3>Vega</h3>
+      <h4>The Seeker of Truth</h4>
+      <p>She journeys across the cosmos to find the hidden patterns that bind all existence.</p>
+    </div>
+
+    <div class="person">
+      <h3>Solara</h3>
+      <h4>Light of Inspiration</h4>
+      <p>Her radiance ignites creativity in every mind that looks up at the night sky.</p>
+    </div>
+
+    <div class="person">
+      <h3>Umbra</h3>
+      <h4>Shadow of Wisdom</h4>
+      <p>He teaches that even darkness has lessons — and every shadow hides a story worth knowing.</p>
+    </div>
+  </div>
+
+  <a href="stories.html" class="button">Back to Stories</a>
+</body>
+</html>
