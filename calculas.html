@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculas — Learn Galaxy</title>
+  <meta name="description" content="Calculas lessons and videos collected for Learn Galaxy." />
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --accent:#6ee7b7;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071020 0%, #071426 100%);color:#e6eef6}
+    .wrap{max-width:1100px;margin:32px auto;padding:22px}header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+.logo{width:62px;height:62px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:grid;place-items:center;font-weight:700;color:#042024}
+h1{font-size:20px;margin:0}
+p.lead{margin:0;color:var(--muted);font-size:14px}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
+@media (max-width:820px){.grid{grid-template-columns:1fr}}
+
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:14px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.card h3{margin:0 0 8px 0;font-size:16px}
+.desc{color:var(--muted);font-size:13px;margin-bottom:10px}
+
+/* Responsive video container that preserves 16:9 */
+.video-wrap{position:relative;padding-top:56.25%;overflow:hidden;border-radius:10px;background:var(--glass)}
+.video-wrap iframe{position:absolute;left:0;top:0;width:100%;height:100%;border:0}
+
+.meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;color:var(--muted);font-size:13px}
+.btn{display:inline-block;padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.03);cursor:pointer}
+
+footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+
+/* small helpers */
+.full{grid-column:1/-1}
+.playlist-list{display:flex;flex-direction:column;gap:8px}
+a.clean{color:var(--accent);text-decoration:none}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">LG</div>
+      <div>
+        <h1>Calculas — Learn Galaxy</h1>
+        <p class="lead">Curated videos to kickstart your calculus journey. Responsive, mobile-friendly page.</p>
+      </div>
+    </header><main class="grid">
+  <!-- Video 1 -->
+  <section class="card">
+    <h3>Calculus Lesson — Video 1</h3>
+    <p class="desc">Watch this lesson to get a clear explanation of basic calculus concepts and examples.</p>
+    <div class="video-wrap">
+      <iframe loading="lazy" src="https://www.youtube.com/embed/eI4an8aSsgw" title="Calculus Lesson 1" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+    <div class="meta">
+      <span>Duration: see YouTube</span>
+      <a class="btn" href="https://youtu.be/eI4an8aSsgw" target="_blank" rel="noopener">Open on YouTube</a>
+    </div>
+  </section>
+
+  <!-- Video 2 -->
+  <section class="card">
+    <h3>Calculus Lesson — Video 2</h3>
+    <p class="desc">A second lesson with worked examples and visual explanations.</p>
+    <div class="video-wrap">
+      <iframe loading="lazy" src="https://www.youtube.com/embed/HfACrKJ_Y2w" title="Calculus Lesson 2" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+    <div class="meta">
+      <span>Duration: see YouTube</span>
+      <a class="btn" href="https://youtu.be/HfACrKJ_Y2w" target="_blank" rel="noopener">Open on YouTube</a>
+    </div>
+  </section>
+
+  <!-- Video 3 -->
+  <section class="card">
+    <h3>Calculus Lesson — Video 3</h3>
+    <p class="desc">Complementary lesson to reinforce concepts with practice problems.</p>
+    <div class="video-wrap">
+      <iframe loading="lazy" src="https://www.youtube.com/embed/2N6A4ed8s58" title="Calculus Lesson 3" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+    <div class="meta">
+      <span>Duration: see YouTube</span>
+      <a class="btn" href="https://youtu.be/2N6A4ed8s58" target="_blank" rel="noopener">Open on YouTube</a>
+    </div>
+  </section>
+
+  <!-- Playlist -->
+  <section class="card full">
+    <h3>Full Playlist</h3>
+    <p class="desc">Play the entire playlist from YouTube — great for a full study session.</p>
+    <div class="video-wrap">
+      <iframe loading="lazy" src="https://www.youtube.com/embed/videoseries?list=PLYZHR46I3SeMz5EPhgaAWQScG338BFieI" title="Calculus Playlist" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+    <div class="meta">
+      <span class="playlist-info">Playlist: PLYZHR46I3SeMz5EPhgaAWQScG338BFieI</span>
+      <a class="btn" href="https://youtube.com/playlist?list=PLYZHR46I3SeMz5EPhgaAWQScG338BFieI" target="_blank" rel="noopener">Open Playlist</a>
+    </div>
+  </section>
+
+  <!-- Notes / Resources -->
+  <section class="card full">
+    <h3>Resources & Notes</h3>
+    <p class="desc">Use these videos together with practice problems. Save a copy of this page for offline viewing (if you need to show a single video offline, download via YouTube's offline feature in the app where allowed).</p>
+    <ul class="playlist-list">
+      <li>Tip: click the YouTube button to open the video in the YouTube app for subtitles and speed controls.</li>
+      <li>Tip: Use <code>loading="lazy"</code> on iframes so the page loads faster on low-end devices.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  Built for <strong>Learn Galaxy</strong>. Happy learning! — Learn Galaxy Team
+</footer>
+
+  </div>
+</body>
+    </html>
