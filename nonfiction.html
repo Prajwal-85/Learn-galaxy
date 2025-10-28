@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nonfiction — Learn Galaxy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Poppins", sans-serif; }
+    body {
+      background: linear-gradient(135deg, #1a0033, #240046, #3c096c);
+      color: #f0f0f0;
+      min-height: 100vh;
+      text-align: center;
+    }
+    header {
+      padding: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    section.videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 0 20px rgba(0, 150, 255, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    iframe:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(0, 150, 255, 0.6);
+    }
+    .books {
+      padding: 3rem 1rem;
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .books h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      color: #a3d5ff;
+    }
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+    .book {
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 15px;
+      padding: 1rem;
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(0, 150, 255, 0.2);
+    }
+    .book:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 150, 255, 0.5);
+    }
+    .book h3 { color: #fff; margin-bottom: 0.5rem; }
+    .book p { font-size: 0.9rem; color: #ccc; }
+  </style>
+</head>
+<body>
+  <header>Nonfiction — Learn Galaxy</header>
+
+  <section class="videos">
+    <iframe src="https://www.youtube.com/embed/e7abD4EfSJY" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/uvg2nHl2sFo" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/Y3qCH_SP9Kw" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/AmIZ2bW9n4s" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/GwkoRBvx2tY" allowfullscreen></iframe>
+  </section>
+
+  <section class="books">
+    <h2>Recommended Nonfiction Books</h2>
+    <div class="books-grid">
+      <div class="book">
+        <h3>Atomic Habits</h3>
+        <p>Build tiny habits that create massive change over time.</p>
+      </div>
+      <div class="book">
+        <h3>Sapiens: A Brief History of Humankind</h3>
+        <p>How humans evolved and shaped the modern world.</p>
+      </div>
+      <div class="book">
+        <h3>The Psychology of Money</h3>
+        <p>Learn how emotions, not logic, drive financial decisions.</p>
+      </div>
+      <div class="book">
+        <h3>Deep Work</h3>
+        <p>Train your focus in a distracted world for meaningful results.</p>
+      </div>
+      <div class="book">
+        <h3>Can’t Hurt Me</h3>
+        <p>David Goggins’ story of mental toughness and self-mastery.</p>
+      </div>
+      <div class="book">
+        <h3>Educated</h3>
+        <p>A memoir of transformation from isolation to education.</p>
+      </div>
+      <div class="book">
+        <h3>The Subtle Art of Not Giving a F*ck</h3>
+        <p>A brutally honest guide to living a meaningful life.</p>
+      </div>
+      <div class="book">
+        <h3>Ikigai</h3>
+        <p>Find your reason for being — the secret to a long, happy life.</p>
+      </div>
+    </div>
+  </section>
+</body>
+  </html>
