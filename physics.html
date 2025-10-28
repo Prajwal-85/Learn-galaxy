@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Physics — Learn Galaxy</title>
+  <meta name="description" content="Physics lessons and playlists to explore the universe with Learn Galaxy." />
+  <style>
+    :root {
+      --bg: #030712;
+      --accent: #38bdf8;
+      --muted: #9ca3af;
+      --radius: 14px;
+      font-family: 'Inter', system-ui, sans-serif;
+    }* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(circle at top, #0f172a, #030712 80%); color: #e5e7eb; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+.logo { width: 62px; height: 62px; border-radius: 12px; background: linear-gradient(135deg, var(--accent), #818cf8); display: grid; place-items: center; font-weight: 700; color: #081a24; }
+h1 { margin: 0; font-size: 22px; }
+p.lead { margin: 0; color: var(--muted); font-size: 14px; }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+@media (max-width: 820px) { .grid { grid-template-columns: 1fr; } }
+
+.card { background: rgba(255,255,255,0.03); border-radius: var(--radius); padding: 14px; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 6px 18px rgba(0,0,0,0.6); }
+.card h3 { margin: 0 0 8px 0; font-size: 17px; }
+.desc { color: var(--muted); font-size: 13px; margin-bottom: 10px; }
+
+.video-wrap { position: relative; padding-top: 56.25%; overflow: hidden; border-radius: 10px; background: rgba(255,255,255,0.04); }
+.video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+.meta { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; color: var(--muted); font-size: 13px; }
+.btn { display: inline-block; padding: 8px 12px; border-radius: 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.03); cursor: pointer; color: var(--accent); text-decoration: none; }
+
+footer { margin-top: 30px; color: var(--muted); font-size: 13px; text-align: center; }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">LG</div>
+      <div>
+        <h1>Physics — Learn Galaxy</h1>
+        <p class="lead">Explore the fascinating laws of nature through curated playlists and lessons.</p>
+      </div>
+    </header><main class="grid">
+  <!-- Playlist -->
+  <section class="card">
+    <h3>Crash Course Physics Playlist</h3>
+    <p class="desc">A complete physics course by Crash Course — covers mechanics, electricity, magnetism, and more.</p>
+    <div class="video-wrap">
+      <iframe loading="lazy" src="https://www.youtube.com/embed/videoseries?list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV" title="Physics Playlist" allowfullscreen></iframe>
+    </div>
+    <div class="meta">
+      <span>Source: Crash Course</span>
+      <a class="btn" href="https://youtube.com/playlist?list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV" target="_blank">Open Playlist</a>
+    </div>
+  </section>
+
+  <!-- Video 1 -->
+  <section class="card">
+    <h3>Quantum Physics Simplified</h3>
+    <p class="desc">Dive into quantum mechanics — a fascinating explanation by Kurzgesagt.</p>
+    <div class="video-wrap">
+      <iframe loading="lazy" src="https://www.youtube.com/embed/ZffEvgEE-hc" title="Quantum Physics" allowfullscreen></iframe>
+    </div>
+    <div class="meta">
+      <span>Duration: See YouTube</span>
+      <a class="btn" href="https://youtu.be/ZffEvgEE-hc" target="_blank">Open on YouTube</a>
+    </div>
+  </section>
+
+  <!-- Bonus Video 1 -->
+  <section class="card">
+    <h3>How the Universe Works — Gravity</h3>
+    <p class="desc">Understand Einstein’s general relativity and how gravity shapes spacetime.</p>
+    <div class="video-wrap">
+      <iframe loading="lazy" src="https://www.youtube.com/embed/MTY1Kje0yLg" title="Gravity Explained" allowfullscreen></iframe>
+    </div>
+    <div class="meta">
+      <span>Bonus Concept</span>
+      <a class="btn" href="https://youtu.be/MTY1Kje0yLg" target="_blank">Open on YouTube</a>
+    </div>
+  </section>
+
+  <!-- Bonus Video 2 -->
+  <section class="card">
+    <h3>The Most Mind-Blowing Concepts in Physics</h3>
+    <p class="desc">A fascinating collection of physics ideas that challenge how we think about reality.</p>
+    <div class="video-wrap">
+      <iframe loading="lazy" src="https://www.youtube.com/embed/XcU9GEUZTQA" title="Mind-Blowing Physics" allowfullscreen></iframe>
+    </div>
+    <div class="meta">
+      <span>Bonus Concept</span>
+      <a class="btn" href="https://youtu.be/XcU9GEUZTQA" target="_blank">Open on YouTube</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Built for <strong>Learn Galaxy</strong> — keep questioning the universe!
+</footer>
+
+  </div>
+</body>
+      </html>
