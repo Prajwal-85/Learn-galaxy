@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us — Learn Galaxy</title>
+  <meta name="description" content="Learn Galaxy — free, friendly, project-first learning for curious students. Courses, guides, and tools to help you build skills and confidence." />
+  <style>
+    :root{
+      --bg:#06071a;
+      --card:#0f1724;
+      --accent:#6ee7b7;
+      --muted:#9aa4c0;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1000px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef8;background: radial-gradient(ellipse at top left, rgba(102,126,234,0.08), transparent 25%), var(--bg);}
+    .stars{position:fixed;inset:0;pointer-events:none;background-image: radial-gradient(2px 2px at 10% 20%, rgba(255,255,255,0.8) , transparent 40%), radial-gradient(1px 1px at 80% 60%, rgba(255,255,255,0.5), transparent 40%), radial-gradient(1.2px 1.2px at 50% 80%, rgba(255,255,255,0.45), transparent 40%);opacity:0.9;mix-blend-mode:screen}
+    .container{max-width:var(--maxw);margin:64px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6);backdrop-filter: blur(6px);border:1px solid rgba(255,255,255,0.03)}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,#183a68,#2b6cb0);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:34px;color:white;box-shadow:0 6px 18px rgba(43,108,176,0.18)}
+    h1{font-size:28px;margin:0}
+    p.lead{color:var(--muted);margin-top:8px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:24px}
+    .card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .mission{line-height:1.6}
+    .values{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+    .value{padding:12px;background:var(--glass);border-radius:8px}
+    .team-list{display:flex;flex-direction:column;gap:10px}
+    .person{display:flex;gap:12px;align-items:center}
+    .avatar{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#334155,#0f1724);display:inline-flex;align-items:center;justify-content:center;font-weight:700}
+    .contact{font-size:14px;color:var(--muted);}
+    a.cta{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:8px;background:linear-gradient(90deg,#00c2a8,#5eead4);color:#052220;font-weight:700;text-decoration:none}
+    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
+    @media(max-width:880px){
+      .grid{grid-template-columns:1fr;}
+      .container{margin:28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <main class="container" role="main">
+    <header>
+      <div class="logo" aria-hidden="true">L</div>
+      <div>
+        <h1>Learn Galaxy</h1>
+        <p class="lead">Curiosity-first learning — free courses, guides, and mini-projects to help students build skills and confidence.</p>
+      </div>
+    </header><div class="grid">
+  <section class="card">
+    <h2>Our mission</h2>
+    <p class="mission">At Learn Galaxy we believe learning should be joyful, practical, and available to everyone. We build short, hands-on lessons and projects that help learners go from understanding concepts to building things they care about — whether it's a simple webpage, a math trick, or a robot prototype. Our focus is accessibility: low-cost tools, clear explanations, and a friendly community.</p>
+
+    <h3 style="margin-top:16px">What we do</h3>
+    <ul style="line-height:1.6">
+      <li>Free mini-courses and walkthroughs for students and beginners.</li>
+      <li>Project-first lessons that teach by building.</li>
+      <li>Community tips, study plans, and open resources you can reuse.</li>
+    </ul>
+
+    <h3 style="margin-top:16px">Core values</h3>
+    <div class="values">
+      <div class="value"><strong>Practicality</strong> — learn by doing; every lesson ends with a small project.</div>
+      <div class="value"><strong>Openness</strong> — content is free to access and reuse where possible.</div>
+      <div class="value"><strong>Empathy</strong> — beginner-friendly explanations and patient teaching.</div>
+      <div class="value"><strong>Curiosity</strong> — encourage questions, experiments, and exploration.</div>
+    </div>
+
+    <h3 style="margin-top:16px">How you can help</h3>
+    <p>Contribute a lesson, report an issue, or share Learn Galaxy with friends. We welcome contributors of all skill levels. If you're a student, teacher, or just someone who loves to build, there's a place for you here.</p>
+
+  </section>
+
+  <aside>
+    <div class="card">
+      <h3>Team & contact</h3>
+      <div class="team-list">
+        <div class="person">
+          <div class="avatar">P</div>
+          <div>
+            <div style="font-weight:700">Prajwal</div>
+            <div class="contact">Founder · learner, builder, and teacher-in-training</div>
+          </div>
+        </div>
+        <div class="person">
+          <div class="avatar">A</div>
+          <div>
+            <div style="font-weight:700">Aria</div>
+            <div class="contact">Community & creative — content, thumbnails, and fun ideas</div>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:12px" class="contact">Email: <a href="mailto:hello@learngalaxy.example">hello@learngalaxy.example</a></p>
+      <a class="cta" href="privacypolicy.html">Privacy policy</a>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3>Quick links</h3>
+      <ul style="line-height:1.6">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="people.html">People</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div>© <span id="year"></span> Learn Galaxy — Made with curiosity.</div>
+</footer>
+
+  </main>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+  </html>
