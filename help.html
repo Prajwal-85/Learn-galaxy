@@ -1,0 +1,151 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Help — Guide to the Web | Learn Galaxy</title>
+  <style>
+    :root{--bg:#071029;--card:#0b1630;--accent:#6ad1ff;--muted:#9fb3c8;--text:#e8f6ff;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;}
+    body{background:linear-gradient(180deg,var(--bg),#041026);color:var(--text);margin:0;padding:36px}
+    .wrap{max-width:980px;margin:0 auto;background:linear-gradient(180deg,#071833,#071427);border-radius:12px;padding:28px;box-shadow:0 10px 40px rgba(0,0,0,0.6)}
+    header{display:flex;gap:16px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#052e3d,#012038);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:26px}
+    h1{margin:0;font-size:22px}
+    p.lead{color:var(--muted);margin-top:6px}
+    nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+    nav a{color:var(--accent);text-decoration:none;padding:8px 12px;border-radius:8px;background:rgba(106,209,255,0.04);font-size:13px}
+    section{margin-top:20px}
+    h2{font-size:16px;margin-bottom:8px}
+    p, li{color:var(--muted);line-height:1.6;font-size:14px}
+    pre{background:#021021;padding:12px;border-radius:8px;overflow:auto;font-size:13px;color:var(--muted)}
+    code{background:rgba(255,255,255,0.02);padding:2px 6px;border-radius:6px;color:var(--accent)}
+    ul{padding-left:18px}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    footer{margin-top:22px;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">L</div>
+      <div>
+        <h1>Help — Quick Guide to the Web</h1>
+        <p class="lead">A concise, practical guide to building, publishing, and improving websites — for beginners and intermediate learners.</p>
+      </div>
+    </header><nav>
+  <a href="#basics">Basics</a>
+  <a href="#design">Design & Accessibility</a>
+  <a href="#frontend">Frontend</a>
+  <a href="#backend">Backend & APIs</a>
+  <a href="#hosting">Hosting & Domains</a>
+  <a href="#security">Security</a>
+  <a href="#seo">SEO & Performance</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<section id="basics">
+  <h2>1. Web basics</h2>
+  <p>The web is built from three core technologies:</p>
+  <ul>
+    <li><strong>HTML</strong> — the structure and content of pages (headings, paragraphs, links, lists, forms).</li>
+    <li><strong>CSS</strong> — styling and layout (colors, fonts, spacing, responsiveness).</li>
+    <li><strong>JavaScript</strong> — interactivity and dynamic behavior (forms, animations, fetching data).</li>
+  </ul>
+  <p>Files are served over <code>HTTP/HTTPS</code>. A browser requests a page from a server, and the server responds with HTML, which may load CSS, JS, images, and other assets.</p>
+</section>
+
+<section id="design">
+  <h2>2. Design & Accessibility</h2>
+  <p>Good design makes sites usable for everyone. Follow these rules:</p>
+  <ul>
+    <li>Use clear visual hierarchy (headings, spacing).</li>
+    <li>Make text readable — sufficient contrast, sensible font sizes.</li>
+    <li>Responsive design — site should work on phones, tablets, and desktops (use <code>meta viewport</code>, flexible grids).</li>
+    <li>Accessibility (a11y): use semantic HTML, <code>alt</code> attributes for images, labels for form fields, and make keyboard navigation possible.</li>
+  </ul>
+</section>
+
+<section id="frontend">
+  <h2>3. Frontend essentials</h2>
+  <p>Start simple. Example starter HTML file:</p>
+  <pre>&lt;!doctype html&gt;
+
+<html> <head> <meta charset="utf-8"/> <meta name="viewport" content="width=device-width,initial-scale=1"/> <title>My Page</title> <link rel="stylesheet" href="styles.css"/> </head> <body> <h1>Hello, web!</h1> <script src="app.js"></script> </body> </html></pre> <p>Use CSS for layout (Flexbox, Grid). Use JavaScript to enhance user experience — keep content accessible without JS when possible.</p> </section>
+
+<section id="backend">
+  <h2>4. Backend & APIs</h2>
+  <p>Backends handle data storage, authentication, and server logic. Common stacks include:</p>
+  <ul>
+    <li>Node.js + Express + MongoDB/Postgres</li>
+    <li>Python (Django/Flask) + Postgres</li>
+    <li>Serverless (Vercel, Netlify functions, AWS Lambda)</li>
+  </ul>
+  <p>APIs let frontend and backend communicate. Use JSON for data exchange and use authentication tokens (JWT) or sessions for protected routes.</p>
+</section>
+
+<section id="hosting">
+  <h2>5. Hosting, domains & deployment</h2>
+  <p>Steps to publish a site:</p>
+  <ol>
+    <li>Buy a domain (example: <code>yourname.com</code>).</li>
+    <li>Choose hosting: static sites (GitHub Pages, Netlify, Vercel) or full servers (DigitalOcean, AWS, Render).</li>
+    <li>Deploy: push code to Git, connect repository to hosting service, configure build settings and environment variables.</li>
+    <li>Enable HTTPS — most hosts provide free TLS via Let's Encrypt.</li>
+  </ol>
+</section>
+
+<section id="security">
+  <h2>6. Security basics</h2>
+  <p>Keep your site and users safe:</p>
+  <ul>
+    <li>Always use HTTPS.</li>
+    <li>Sanitize user input to prevent SQL injection and XSS.</li>
+    <li>Store passwords hashed (bcrypt or Argon2), never in plain text.</li>
+    <li>Use environment variables for secrets and don't commit them to version control.</li>
+    <li>Keep dependencies updated and scan for vulnerabilities.</li>
+  </ul>
+</section>
+
+<section id="seo">
+  <h2>7. SEO & Performance</h2>
+  <p>To help people find your site and keep it fast:</p>
+  <ul>
+    <li>Use meaningful titles and meta descriptions.</li>
+    <li>Use semantic HTML and structured data when appropriate.</li>
+    <li>Optimize images (use modern formats like WebP, lazy-loading).</li>
+    <li>Minify CSS/JS and use caching/CDNs.</li>
+    <li>Measure performance with Lighthouse and fix high-priority issues (LCP, CLS, FID).</li>
+  </ul>
+</section>
+
+<section id="resources">
+  <h2>8. Learning resources & next steps</h2>
+  <div class="cols">
+    <div>
+      <h3>Hands-on</h3>
+      <ul>
+        <li>Build small projects: portfolio site, to-do app, blog</li>
+        <li>Host projects on GitHub Pages, Netlify, or Vercel</li>
+        <li>Practice by cloning simple websites</li>
+      </ul>
+    </div>
+    <div>
+      <h3>References</h3>
+      <ul>
+        <li>MDN Web Docs — excellent reference for HTML/CSS/JS</li>
+        <li>freeCodeCamp — structured curriculum and projects</li>
+        <li>CSS-Tricks — practical layout and CSS patterns</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Need a starter template, code examples, or a deploy walkthrough? Ask and I will add a tailored example for your project.</p>
+  <p style="margin-top:10px;color:var(--muted)">Last updated: October 28, 2025</p>
+</footer>
+
+  </div>
+</body>
+                </html>
